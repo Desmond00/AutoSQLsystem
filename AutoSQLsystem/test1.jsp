@@ -1,0 +1,1 @@
+!--<jsp:useBean id="ob" class="user.stored" scope="session"></jsp:useBean>-->
