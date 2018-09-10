@@ -1,0 +1,83 @@
+@font-face {
+	font-family: 'Damien';
+	src: url('fonts/DamienTypewriter.otf') format('opentype');
+}
+    
+@font-face {
+    font-family: 'Kelly Slab';
+    src: url('fonts/KellySlab-Regular.otf') format('opentype');
+}
+    
+@font-face {
+   font-family: 'Oregano';
+   src: url('fonts/Oregano-Regular.otf') format('opentype');
+}
+@font-face {
+   font-family: 'Aduren';
+   src: url('fonts/Aduren.otf') format('opentype');
+}
+  /* Reset Select */
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    font-family: 'Damien';
+    font-size: 18px;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #595520;
+    background-image: none;
+  }
+  /* Custom Select */
+  .select {
+    position: relative;
+    display: block;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #595520;
+    overflow: hidden;
+    border-radius: .25em;
+    padding: 2px;
+  }
+  select {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 .5em;
+    color: #E2EA98;
+    cursor: pointer;
+  }
+  select::-ms-expand {
+    display: none;
+  }
+  /* Arrow */
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 1em;
+    background: #595520;
+    color: #000;
+    pointer-events: none;
+  }
+  /* Transition */
+  .select:hover::after {
+    color: #E2EA98;
+    transition-duration: 0.6s; 
+  }
+  
+   select:focus {
+    color: #E2EA98;
+    transition-duration: 0.6s; 
+  }
+  
+  .select::after {
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+  }

@@ -1,0 +1,57 @@
+@font-face {
+	font-family: 'Kelly Slab';
+	src: url('fonts/KellySlab-Regular.otf') format('opentype');
+    }
+
+@font-face {
+	font-family: 'Oregano';
+	src: url('fonts/Oregano-Regular.otf') format('opentype');
+	}
+
+h4{
+	text-align: center;
+}
+
+#user img{
+	position: relative !important;
+	bottom: 6px;
+}
+
+.buttonCont{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.button{
+    color: #595520;//#A9FF2D;
+    border: 2px dashed #312f0f;
+    border-radius: 3px;
+    font-family: "Oregano", serif;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-size: 18px;
+    margin: 10px 0px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    transition-duration: 0.6s;
+}
+
+.button:hover, .button:focus{
+    background-color: #595520;//#A9FF2D;
+    border-style: groove;
+    color: rgba(240,152,25,1.0);
+}
+
+img .logo:hover, img .logo:focus{
+    opacity: 0.1;
+}
+
+h3{
+    color: #595520;
+    font-family: "Kelly Slab", sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-align: center;
+}

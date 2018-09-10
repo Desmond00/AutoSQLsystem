@@ -4,5 +4,10 @@
     Class.forName("oracle.jdbc.OracleDriver");
     con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","autosql","sql1234");
     }
-    catch(Exception e){out.println(e);}
+    catch(Exception e){}
+    /*{out.println(e);}*/
+    /*finally{
+        if(con!=null)
+            con.close();
+    }*/
 %>

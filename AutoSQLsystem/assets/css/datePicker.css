@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'Damien';
+	src: url('fonts/DamienTypewriter.otf') format('opentype');
+}
+
+
+::-webkit-datetime-edit { padding: 1em; }
+::-webkit-datetime-edit-fields-wrapper { background: #595520; }
+::-webkit-datetime-edit-text { color: #595520; padding: 0 0.3em; font-family: "Damien", serif; }
+::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-year-field { color: #F1CD08; font-family: "Damien", serif;}
+::-webkit-inner-spin-button { display: block; }
+::-webkit-calendar-picker-indicator { background: #595520; }

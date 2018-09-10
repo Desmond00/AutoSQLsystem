@@ -1,0 +1,58 @@
+@font-face {
+	font-family: 'Damien';
+	src: url('fonts/DamienTypewriter.otf') format('opentype');
+}
+
+input[type=file]::-webkit-file-upload-button{
+	background: rgba(0,0,0,0.3);
+    width: 40%!important;
+    padding: 4px 0px!important;
+    margin: 0px!important;
+    font-family: "Damien", serif!important;
+    font-size: 18px!important;
+    letter-spacing: 1px!important;
+    color: #595520!important;
+    display: block!important;
+    border: 2px dashed #000!important;
+    border-radius: 16px!important;
+    text-align: center!important;
+    transition-duration: 0.6s!important;
+	position: relative;
+}
+
+input[type=file]{
+	color: #595520!important;
+	font-family: "Damien", serif!important;
+    font-size: 18px!important;
+    letter-spacing: 1px!important;
+	width: 60%;
+	display: block!important;
+	position:relative!important;
+}
+
+
+
+input[type=file]::-webkit-file-upload-button:hover, input[type=file]::-webkit-file-upload-button:focus{
+	color: rgba(240,152,25,1.0)!important;
+	background: #595520!important;
+	border: 2px solid #000!important;
+	border-style: groove!important;
+	}
+
+    progress.up {
+    background-color: #595520;
+	color: rgba(240,152,25,1.0);
+    }
+    
+    progress.up::-webkit-progress-bar {  
+		background-color: #595520;
+	}
+	
+	progress.up::-moz-progress-bar {  
+		background-color: rgba(240,152,25,1.0);
+	}  
+    
+    progress.up::-webkit-progress-value {  
+		background-color: rgba(240,152,25,1.0);
+		-webkit-transition: 0.5s ease-out;
+   	}  

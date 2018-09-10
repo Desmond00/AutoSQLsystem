@@ -3,14 +3,14 @@
 <head>
 <meta charset="ISO-8859-1" name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Login Page</title>
-<link rel="stylesheet" href="css/background.css?version=1">
-<link rel="stylesheet" href="css/form1.css?version=1">
+<link rel="stylesheet" href="assets/css/background.css?version=1">
+<link rel="stylesheet" href="assets/css/form1.css?version=1">
 
 <style>
 
 #cms{
 	height: 400px;
-	background: url("img/icon/logo.png") no-repeat bottom center;
+	background: url("assets/img/icon/logo.png") no-repeat bottom center;
 	position: relative;
 }
 
@@ -77,11 +77,12 @@
 <div class="formCont">
 <h4>Enter Login Credentials</h4>
 	<form name="login" method=post action="home" onsubmit="return check(nm.value,psd.value)">
-		<input type=text name=nm placeholder="Email Id"><br><br>
+		<input type=text name=nm placeholder="Email Id" autofocus><br><br>
 		<input type=password name=psd placeholder="Password" "><br><br>
 		<div id="show"></div>
 		<input type=submit id="login" value="Let me in">
 	</form>
+	<%@include file="googleSingleSignOn.jsp" %>
 	<form action="signUp">
 		<p>Don't have an account?<input type=submit value="Allot a new account"></p>
 	</form>

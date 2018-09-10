@@ -1,9 +1,10 @@
 <html>
 	<head>
-		<link rel="stylesheet" href="css/menu.css">
-		<link href="css/background.css" type="text/css" rel="stylesheet">
+		<link rel="shortcut icon" href="assets/img/icon/title.ico" />
+		<link rel="stylesheet" href="assets/css/menu.css">
+		<%-- <link href="assets/css/background.css" type="text/css" rel="stylesheet"> --%>
 
-		<script language="javascript">
+		<script>
 			window.onload = check();
 			function check()
 			{
@@ -60,18 +61,34 @@
 
 		</script>
 	</head>
-<body>
-	<center>
-		<a href="home"><img class="logo" src="img/icon/CMS.png" alt="icon missing"></a>
-		<br><br>
-		<div class="buttonCont">
-			<div id="showMenu">
-				<a class="button" id="login"  href="login">Login</a>
-    			<a class="button" id="signup" href="signUp">Sign up</a>
-				<a class="button" id="about" href="about">About</a>
+
+	<header>
+	<div style="text-align:center">
+		<div id="menuContent">
+			<a href="home"><img class="logo" src="assets/img/icon/ASQLS.png" alt="icon missing"></a>
+			<br><br>
+			<div class="buttonCont">
+				<div id="showMenu">
+					<a class="button" id="login"  href="login">Login</a>&nbsp;
+					<a class="button" id="signup" href="signUp">Sign up</a>&nbsp;
+					<a class="button" id="about" href="about">About</a>
+				</div>
 			</div>
+			<br>	
 		</div>
-	</center>
-	<h3>Generate SQL automatically</h3>
-</body>
+	</div>
+	<hr>
+	</header>
 </html>
+
+<style>
+	body{
+		margin: 0;
+	}
+	header{
+		background: #E2EA98;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #ABA993, #E2EA98, #ABA993);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #ABA993, #E2EA98, #ABA993); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		display: fixed!important;
+	}
+</style>

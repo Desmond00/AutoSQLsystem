@@ -36,7 +36,12 @@
     		response.addCookie(ob);
     	}
     	//out.println(n);
-        out.println("<a id=\"user\" class=\"button\"  href=\"user\"><img class=\"logo\" src=\"img/icon/user1.png\" alt=\"icon missing\" align=\"middle\">"+name+"</a> <a class=\"button\" id=\"logout\" href=\"logout\">Log out</a>"+
+		if(session.getAttribute("userImage") != null) {
+			out.println("<a id=\"user\" class=\"button\"  href=\"user\"><img class=\"logo\" src=\""+session.getAttribute("userImage")+"\" alt=\"icon missing\" height=40 width=40 align=\"middle\">"+name+"</a>&nbsp&nbsp<a class=\"button\" id=\"logout\" href=\"logout\">Log out</a>&nbsp&nbsp"+
+        		"<a class=\"button\" id=\"about\" href=\"about\">About</a>");
+		}
+		else
+	        out.println("<a id=\"user\" class=\"button\"  href=\"user\"><img class=\"logo\" src=\"assets/img/icon/user.png\" alt=\"icon missing\" align=\"middle\">"+name+"</a>&nbsp&nbsp<a class=\"button\" id=\"logout\" href=\"logout\">Log out</a>&nbsp&nbsp"+
         		"<a class=\"button\" id=\"about\" href=\"about\">About</a>");
     }
     else

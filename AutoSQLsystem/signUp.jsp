@@ -3,21 +3,22 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>SignUp page</title>
-<link rel="stylesheet" href="css/background.css?version=1">
-<link rel="stylesheet" href="css/form1.css?version=1">
+<link rel="shortcut icon" href="assets/img/icon/title.ico" />
+<link rel="stylesheet" href="assets/css/background.css?version=1">
+<link rel="stylesheet" href="assets/css/form1.css?version=1">
 
 <style>
 
 #cms{
 	height: 400px;
-	background: url("img/icon/logo.png") no-repeat center center;
+	background: url("assets/img/icon/logo.png") no-repeat center center;
 	position: relative;
 }
 
 </style>
 
 
-<script language="javascript">
+<script>
 var chk=0;
 var f = 0;
 	function check(e)
@@ -246,24 +247,24 @@ var f = 0;
 </head>
 <body>
 <center>
-<div id="cms"></div>
-<div class="formCont">
-<h4>Enter Valid Credentials to register</h4>
-	<form name="signup" method=post action="login" onsubmit="return fullCheck()">
-		<input type=text name=email placeholder="Email Id" onblur="check(this.value)"><br>
-		<div id="email1"></div>
-        <input type=password name=psd placeholder="Password" onblur="checkp1(this.value)"><br>
-        <div id="psd1"></div>
-        <input type=password name=confpsd placeholder="Confirm Password" onblur="checkp2(psd.value,this.value)"><br>
-        <div id="psd2"></div>
-        <input type=text name=nm placeholder="Name" onblur="checknm(this.value)"><br>
-        <div id="nm1"></div>
-        <input type=text name=phnNo placeholder="Phone number" onblur="checkph(this.value)"><br>
-        <div id="phnNo1"></div>
-		<div id="show"></div>
-		<input type=submit id="signup" value="Sign UP">
-	</form>
-</div>
+	<div id="cms"></div>
+	<div class="formCont">
+	<h4>Enter Valid Credentials to register</h4>
+		<form name="signup" method=post action="login" onsubmit="return fullCheck()">
+			<input type=text name=email placeholder="Email Id" onblur="check(this.value)" autofocus><br>
+			<div id="email1"></div>
+	        <input type=password name=psd placeholder="Password" onblur="checkp1(this.value)"><br>
+	        <div id="psd1"></div>
+	        <input type=password name=confpsd placeholder="Confirm Password" onblur="checkp2(psd.value,this.value)"><br>
+	        <div id="psd2"></div>
+	        <input type=text name=nm placeholder="Name" onblur="checknm(this.value)"><br>
+	        <div id="nm1"></div>
+	        <input type=text name=phnNo placeholder="Phone number" onblur="checkph(this.value)"><br>
+	        <div id="phnNo1"></div>
+			<div id="show"></div>
+			<input type=submit id="signup" value="Sign UP">
+		</form>
+	</div>
 </center>
 </body>
 </html>
